@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="feature">
+
+            <h1 class="title">Expense Tracker</h1>
+            <div>
+
+                <label for="expense">Expense:</label>
+                <input type="text" name="expense" id="expense" placeholder="Where the expense made?">
+            </div>
+
+            <div class="date-amt-input">
+
+                <label class="label-date" for="date">Date:</label>
+                <input type="date" name="date" id="date" placeholder="mm/dd/yyyy">
+                <label for="amount">Amount:</label>
+                <input type="number" name="amount" id="amount">
+
+            </div>
+
+            <button class="submit-btn">Add Expense</button>
+
+        </div>
+
+        <div class="preview">
+
+            <div class="table-div">
+
+                <table class="table">
+
+                    <tr>
+                        <td class="main">Expense</td>
+                        <td class="main" id="middle">Date</td>
+                        <td class="main">Amount</td>
+                    </tr>
+
+
+                </table>
+                <!-- <button class="delete-btn">X</button> -->
+            </div>
+
+            <div class="table-div" id="table2">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
